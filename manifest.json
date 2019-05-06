@@ -1,0 +1,17 @@
+{
+"manifest_version": 2,
+    "name": "Chat Extension",
+    "description": "Chrome extension for the chat",
+    "version": "1.2",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.messenger.com/t/1654728714783127"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
